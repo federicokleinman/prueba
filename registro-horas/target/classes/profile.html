@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+<title>Registro de Horas</title>
+
+<!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+<link href="css/materialize.css" type="text/css" rel="stylesheet"
+	media="screen,projection" />
+<link href="css/style.css" type="text/css" rel="stylesheet"
+	media="screen,projection" />
+</head>
+<body>
+	<nav class="light-blue lighten-1" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">AMÉN</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="history.html">Histórico</a></li>
+				<li><a href="profile.html">Datos Personales</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="history.html">Histórico</a></li>
+				<li><a href="profile.html">Datos Personales</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i
+				class="material-icons">menu</i></a>
+		</div>
+	</nav>
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br> <br>
+			<h5 class="header left black-text">
+				<strong>Perfil de usuario</strong>
+			</h5>
+			<br> <br>
+			<hr>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+			<div class="row">
+				<form class="col s12" action="" method="post">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate"> <label
+								for="first_name">Nombres *</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate"> <label
+								for="last_name">Apellidos *</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="first_name" type="text" class="validate"> <label
+								for="first_name">Dirección</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="last_name" type="text" class="validate"> <label
+								for="last_name">Celular *</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="email" type="email" class="validate"> <label
+								for="email">Email *</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s10 offset-s1 center-align">
+							<button class="btn waves-effect waves-light" type="submit"
+								name="action">
+								Guardar <i class="material-icons right"></i>
+							</button>
+						</div>
+
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<br> <br>
+
+		<div class="section"></div>
+	</div>
+
+	<footer class="page-footer blue">
+
+		<div class="footer-copyright">
+			<div class="container">
+				Hecho por <a class="white-text text-lighten-3" href="http://amen.ad">Amén</a>
+			</div>
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+		});
+	</script>
+
+	<script type="text/javascript">
+		$('.datepicker').pickadate({
+			selectMonths : true, // Creates a dropdown to control month
+			selectYears : 4
+		});
+	</script>
+
+</body>
+</html>
